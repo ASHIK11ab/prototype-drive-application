@@ -1,0 +1,71 @@
+.container {
+  position: absolute;
+  width: 520px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: auto;
+  padding: 2rem 2.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1.2px solid rgb(109, 109, 109);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.brand-text, .sub-text, .button-group a {
+  text-align: center;
+}
+
+.container .brand-text {
+  display: block;
+  font-size: 30px;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #484848;
+}
+
+.container .sub-text {
+  display: block;
+  font-size: 20px;
+  color: #000;
+  margin: 15px 0;
+}
+
+.container .button-group {
+  display: flex;
+  justify-content: space-around;
+  margin: 25px 0 10px 0;
+}
+
+.button-group a {
+  display: block;
+  width: 150px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #d2a910;
+  font-size: 18px;
+  font-weight: 450;
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 550px) {
+  .container {
+    width: 90%;
+    padding: 2rem 1.5rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-group a {
+    width: 100%;
+  }
+
+  .button-group a:last-child {
+    margin-top: 20px;
+  }
+}
