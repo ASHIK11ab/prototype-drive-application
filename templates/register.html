@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../src/css/login-register.css">
+  <title>Register to MyDrive</title>
+</head>
+<body>
+  <main class="container">
+    <span class="brand-text">mydrive</span>
+    <span class="sub-text">Register</span>
+    <form action="/login" method="post">
+      <label for="username">Username:</label>
+      <input type="text" name="username" id="username" placeholder="Enter your username">
+      <label for="username">Password:</label>
+      <input type="password" name="password" id="password" placeholder="Enter your secret password">
+      <label for="username">Retype Password:</label>
+      <input type="password" name="confirm-password" id="confirm-password" placeholder="Type your password again">
+      <span class="info-text">Aldready have an account <a href="/login">login instead.</a></span>
+      <button type="submit">Register</button>
+    </form>
+  </main>
+</body>
+</html>
