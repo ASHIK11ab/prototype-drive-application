@@ -1,0 +1,100 @@
+.container {
+  width: 520px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 5rem auto;
+  padding: 2rem 2.5rem;
+  border: 1.2px solid rgb(186, 186, 186);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.brand-text, .sub-text, form button {
+  text-align: center;
+}
+
+.container .brand-text {
+  display: block;
+  font-size: 30px;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #484848;
+}
+
+.container .sub-text {
+  display: block;
+  font-size: 25px;
+  font-weight: 400;
+  color: #000;
+  margin: 15px 0;
+}
+
+.container form {
+  position: relative;
+  width: 100%;
+  padding: 1rem 1.3rem;
+  box-sizing: border-box;
+}
+
+form label {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  text-transform: capitalize;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  margin: 15px 0 20px 0;
+  outline: none;
+  padding: 15px;
+  font-size: 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+form input:focus {
+  outline: none;
+  border: 2px solid dodgerblue;
+  transition: border .8s;
+}
+
+form .info-text {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #5b5b5b;
+  margin: 10px 0;
+}
+
+form .info-text a {
+  text-decoration: none;
+  color: dodgerblue;
+}
+
+form button[type=submit] {
+  width: 100px;
+  border: none;
+  background-color: maroon;
+  color: #fff;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 1.5rem 1rem 1rem 1rem;
+  }
+
+  .container form {
+    padding: 10px;
+  }
+}
